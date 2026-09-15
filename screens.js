@@ -86,7 +86,7 @@ const SCREENS = [
 
 { id:"hero", kind:"hero", act:0, chrome:false, name:"Welcome",
   h1:"A pitch deck for<br>your feature film",
-  lede:"I'll build it from your logline and re-cut it for every room you pitch.",
+  lede:"Give me your logline and I'll build the deck.",
   cta:"Get Started", subcta:"Already have an account? <b>Sign In</b>" },
 
 { id:"intro", kind:"coachOnly", act:0, chrome:false, name:"The promise",
@@ -184,9 +184,9 @@ const SCREENS = [
 { id:"roomsreflect", kind:"reflectVar", act:2, varKey:"roomMode", name:"One film, many decks",
   variants:{
     many:{eyebrow:"{roomCount} rooms", h1:"One film, {roomCount} decks.",
-      body:"I'll re-cut the same deck for {roomList}, with a different slide on top for each."},
+      body:"I'll make a version for {roomList}, each with a different first slide."},
     one:{eyebrow:"Where you'll start", h1:"I'll build it for {roomOne}.",
-      body:"Add another room later and I'll re-cut the deck with a different slide on top."}
+      body:"Add another room later and I'll make a version for it."}
   } },
 
 { id:"heard", kind:"select", act:2, key:"heard", multi:true, style:"quote", name:"What they've said",
@@ -421,7 +421,7 @@ const SCREENS = [
 
 { id:"loading", kind:"loading", act:4, chrome:false, name:"Building the deck",
   h1:"I'm building your deck",
-  steps:["Reading your logline","Pulling box office for your comps","Ordering the slides","Re-cutting for each room"],
+  steps:["Reading your logline","Pulling box office for your comps","Ordering the slides","Making a version for each room"],
   listTitle:"Built from what you told me",
   list:["A title slide for {titleShown}","Comps that made {compsMultiple} times their budget","A budget slide for {budgetPhrase}","{versionsCount} for {roomList}"],
   social:"Get ready to join the <b>9,000 filmmakers</b> building {genreNoun} decks on FilmTailor this month." },

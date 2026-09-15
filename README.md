@@ -1,7 +1,7 @@
 # Logline by FilmTailor · deck onboarding
 
 A 36-screen onboarding for FilmTailor's pitch deck builder, which turns a feature
-film into a deck and re-cuts it for every room it gets pitched in. Static site: open
+film into a deck and makes a version of it for every room it gets pitched in. Static site: open
 `index.html`, or push to GitHub Pages as-is.
 
 **Top strip** collapses by default. Open it to see every screen in order and click

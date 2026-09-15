@@ -248,13 +248,13 @@ function renderBody(scr, s, d, live){
 
   if(K==="hero"){
     const dd=derive(Object.assign({},START,DEMO));
-    return {html:`<div class="body" style="padding-top:10px;position:relative">
-    <div class="spot" style="top:2%;opacity:.6"></div>
-    <div style="position:relative;margin:6px auto 30px;width:260px">
-      <div class="slide" style="padding:14px 15px"><div class="sk"></div>
-        <div class="st" style="font-size:25px">${esc(dd.titleShown)}</div>
+    return {html:`<div class="body center" style="position:relative">
+    <div class="spot" style="top:6%;opacity:.6"></div>
+    <div style="position:relative;margin:0 auto 34px;width:300px">
+      <div class="slide" style="padding:16px 17px"><div class="sk"></div>
+        <div class="st" style="font-size:28px">${esc(dd.titleShown)}</div>
         <div class="sg">${dd.genreLabel} · ${dd.budgetPhrase}</div>
-        <div class="sl" style="font-size:8.5px">${esc(dd.logline.slice(0,96))}…</div>
+        <div class="sl" style="font-size:9.5px">${esc(dd.logline.slice(0,118))}…</div>
       </div>
       <div style="position:absolute;right:-14px;bottom:-16px;background:var(--paper);border:1px solid var(--paper-line);border-radius:12px;padding:8px 12px;box-shadow:0 10px 22px rgba(0,0,0,.14);text-align:left">
         <div style="font-family:var(--serif);font-size:19px;font-weight:600;color:#FF0099;line-height:1">${dd.compsMultiple}x</div>
