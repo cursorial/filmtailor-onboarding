@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FilmTailor · Deck onboarding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="strip-wrap collapsed" id="stripWrap">
+  <div class="strip-head">
+    <span class="brand"><img class="brand-logo" src="logo-light.svg" alt="FilmTailor"></span>
+    <span class="strip-meta" id="stripMeta">40 screens</span>
+    <div class="strip-actions">
+      <button class="mini-btn" id="restartBtn">Restart</button>
+      <button class="mini-btn ic" id="stripToggle" aria-label="Show all screens" aria-expanded="false">
+        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1.5L5.5 5.5 10 1.5"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="filmstrip" id="filmstrip"></div>
+</section>
+
+<main class="stage">
+  <div class="phone-col">
+    <div class="phone phone-live" id="livePhone"></div>
+    <div class="phone-controls">
+      <button class="pc-btn" id="prevBtn" aria-label="Previous screen">
+        <svg width="15" height="13" viewBox="0 0 16 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 1L1 7l5.5 6M1 7h14"/></svg>
+      </button>
+      <span class="pc-count" id="counter">1 / 40</span>
+      <button class="pc-btn" id="nextBtn" aria-label="Next screen">
+        <svg width="15" height="13" viewBox="0 0 16 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 1L15 7l-5.5 6M15 7H1"/></svg>
+      </button>
+    </div>
+  </div>
+</main>
+
+<script src="screens.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
