@@ -200,7 +200,7 @@ const MICMARK = `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" str
 function coachHTML(scr, d){
   const line = T(scr.coach, d);
   const sub = scr.lede ? `<p class="coach-lede">${T(scr.lede,d)}</p>` : "";
-  return `<div class="coachrow"><div class="coach-mark">${MICMARK}</div><div class="bubble">${line}</div></div>${sub}`;
+  return `<div class="script-block"><div class="cue">Logline</div><div class="dialogue">${line}</div>${sub}</div>`;
 }
 /* every question screen leads with either a bubble or a headline, never both */
 function head(scr, d, cls){
@@ -564,7 +564,7 @@ function renderBody(scr, s, d, live){
       </div>`, dock:""};
 
   if(K==="coachOnly") return {html:`<div class="body center" style="position:relative">
-      <div class="spot" style="top:14%;opacity:.6"></div>
+      <div class="fadein">Fade in:</div>
       <div style="position:relative">${coachHTML(scr,d)}
       ${scr.sub?`<p class="coach-lede" style="margin-top:14px">${scr.sub}</p>`:""}</div></div>`,
       dock: ctaBtn(scr.cta)};
