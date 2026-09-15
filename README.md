@@ -1,4 +1,4 @@
-# FilmTailor · deck onboarding
+# Logline by FilmTailor · deck onboarding
 
 A 36-screen onboarding for FilmTailor's pitch deck builder, which turns a feature
 film into a deck and re-cuts it for every room it gets pitched in. Static site: open

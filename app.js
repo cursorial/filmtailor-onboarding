@@ -242,7 +242,8 @@ function renderBody(scr, s, d, live){
   if(K==="splash") return {cls:"", html:`<div class="body center" style="align-items:center;justify-content:center;position:relative">
     <div class="spot" style="top:26%"></div>
     <div style="text-align:center;position:relative">
-      <img class="splash-logo" src="logo.svg" alt="FilmTailor">
+      <div class="splash-name">Logline</div>
+      <div class="splash-by">by <img class="splash-ft" src="logo.svg" alt="FilmTailor"></div>
     </div></div>`, dock:""};
 
   if(K==="hero"){

@@ -721,3 +721,9 @@ textarea.field{ min-height:150px; }
 .fine{ font-size:12px; color:var(--muted); line-height:1.5; margin-top:14px; }
 .screen.enter .plan:nth-child(1){ animation:riseIn .38s .10s both; }
 .screen.enter .plan:nth-child(2){ animation:riseIn .38s .17s both; }
+
+/* splash: the feature name, then whose it is */
+.splash-name{ font-family:var(--sans); font-size:50px; font-weight:800; letter-spacing:-.035em; line-height:1; color:var(--ink); }
+.splash-by{ display:flex; align-items:center; justify-content:center; gap:8px; margin-top:14px;
+  font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+.splash-ft{ height:13px; width:auto; display:block; }
